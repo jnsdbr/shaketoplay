@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone_android:before {
+  content: "\e324";
+}
+.icon-play_arrow:before {
+  content: "\e037";
+}
+.icon-stop:before {
+  content: "\e047";
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    font-family: Roboto;
+    font-size:12px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    background: -webkit-linear-gradient(#B3FFAB, #12FFF7);
+    background: linear-gradient(#B3FFAB, #12FFF7);
+}
+
+.app {
+    display: block;
+    width: 90%;
+    padding: 5%;
+}
+
+.big {
+    display: block;
+    text-align: center;
+    font-size: 20em;
+    margin-top: 37%;
+}
+
+@-webkit-keyframes fade {
+    from { opacity: 0.8; }
+    50% { opacity: 0.4; }
+    to { opacity: 0.8; }
+}
+
+.loading {
+    -webkit-animation:fade 3000ms infinite;
+}
+
+@-webkit-keyframes shakeAnim {
+    10%, 90% {
+      -webkit-transform: translate(0, -12px);
+    }
+    20%, 80% {
+      -webkit-transform: translate(0, 24px);
+    }
+    30%, 50%, 70% {
+      -webkit-transform: translate(0, -38px);
+    }
+    40%, 60% {
+      -webkit-transform: translate(0, 38px);
+    }
+}
+
+.shake {
+	-webkit-animation-name: shakeAnim;
+	-webkit-animation-duration: 1.5s;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
